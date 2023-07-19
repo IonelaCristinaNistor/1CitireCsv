@@ -27,7 +27,7 @@ public class Tema3 {
                 .option("url", "jdbc:mysql://localhost:3306/tema3?serverTimezone=UTC")
                 .option("dbtable", tableName)
                 .option("user", "root")
-                .option("password", "NmY67IoN")
+                .option("password", "root")
                 .save(tableName + ".tema3");
     }
 }
