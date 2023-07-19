@@ -11,15 +11,17 @@ public class Tema2 {
 
         Dataset<Row> dataset = sparkSession.read().option("header", "true")
                 .csv("C:\\Users\\nisto\\IdeaProjects\\untitled1\\src\\main\\resources\\Erasmus.csv");
-/*
         dataset.filter(col("Receiving Country Code").isin("LV", "MT", "RO"))
                 .groupBy("Receiving Country Code", "Sending Country Code")
                 .count().orderBy("Receiving Country Code", "Sending Country Code")
                 .show(30, false);
- */
+
         // varianta 1
+        /*
          dataset.groupBy("Receiving Country Code","Sending Country Code")
                 .count().sort("Receiving Country Code","Sending Country Code")
                 .show(20,false);
+
+         */
     }
 }
